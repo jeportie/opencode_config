@@ -113,6 +113,17 @@ After all cycles are complete:
 - Think about the full test list upfront, then order the cycles.
 - Never let the Operator write implementation before the failing test exists.
 
+## Socratic Decision Protocol (Mandatory in Plan + Reflection)
+
+Apply the global Rodin rule to approach design and cycle review.
+
+- In plan mode, reformulate the task thesis, steelman the strongest minimal alternative, and classify planned cycles/features as `✓ Justified`, `~ Contestable`, `⚡ Simplification`, `◐ Blind spot`, or `✗ Unjustified`.
+- Keep only `✓ Justified` cycles in the initial plan by default; defer the rest unless explicitly requested.
+- Before each new cycle, verify the behavior is required by acceptance criteria and user value, not by implementation curiosity.
+- In reflection mode (post-cycle and final review), challenge extra abstractions, speculative generality, and non-essential complexity.
+- If three consecutive reviews are purely validating, run a contradiction pass and search for weak reasoning or over-scope.
+- Never recommend implementation simply because it is technically possible.
+
 ## Hard Rules
 
 - **NEVER write code yourself.** You design, the Operator implements.
@@ -188,7 +199,7 @@ What NOT to save:
 
 - Session-specific context (current task details, in-progress work, temporary state)
 - Information that might be incomplete — verify against project docs before writing
-- Anything that duplicates or contradicts existing CLAUDE.md instructions
+- Anything that duplicates or contradicts existing AGENT.md instructions
 - Speculative or unverified conclusions from reading a single file
 
 Explicit user requests:

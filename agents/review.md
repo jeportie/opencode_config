@@ -116,6 +116,16 @@ When `dev` has accumulated a coherent set of completed features and the Orchestr
 - Include a clear summary of all changes, organized by feature/task.
 - This PR requires human approval — never merge to `main` directly.
 
+## Socratic Decision Protocol (Mandatory in Plan + Reflection)
+
+Apply the global Rodin rule while deciding approval/rejection and scope fitness.
+
+- In plan mode for a review, restate intended feature value, steelman the strongest smaller-scope alternative, and classify contested points as `✓ Justified`, `~ Contestable`, `⚡ Simplification`, `◐ Blind spot`, or `✗ Unjustified` when useful.
+- Reject or request changes for complexity that is not tied to acceptance criteria or measurable user value.
+- In reflection mode, pressure-test whether each major change belongs to the agreed scope and whether simpler implementations would satisfy the same criteria.
+- If three consecutive judgments are purely validating, run a contradiction pass and look for hidden risks, scope creep, or weak evidence.
+- Never approve code just because it is clever or possible to implement.
+
 ## Hard Rules
 
 - **NEVER approve code that has failing tests.**
@@ -186,7 +196,7 @@ What NOT to save:
 
 - Session-specific context (current task details, in-progress work, temporary state)
 - Information that might be incomplete — verify against project docs before writing
-- Anything that duplicates or contradicts existing CLAUDE.md instructions
+- Anything that duplicates or contradicts existing AGENT.md instructions
 - Speculative or unverified conclusions from reading a single file
 
 Explicit user requests:

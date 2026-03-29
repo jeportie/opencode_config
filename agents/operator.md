@@ -207,7 +207,7 @@ What to save:
 What NOT to save:
 - Session-specific context (current task details, in-progress work, temporary state)
 - Information that might be incomplete — verify against project docs before writing
-- Anything that duplicates or contradicts existing CLAUDE.md instructions
+- Anything that duplicates or contradicts existing AGENT.md instructions
 - Speculative or unverified conclusions from reading a single file
 
 Explicit user requests:

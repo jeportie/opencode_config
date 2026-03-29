@@ -101,6 +101,17 @@ When decomposing tasks, ask yourself:
 4. Can multiple tasks run in parallel? If yes, don't create false dependencies.
 5. Is the task small enough to be completed in a single focused session? If not, decompose.
 
+## Socratic Decision Protocol (Mandatory in Plan + Reflection)
+
+Apply the global Rodin rule for every task breakdown and orchestration decision.
+
+- In plan mode, restate the user thesis, steelman the strongest smaller-scope alternative, and classify each proposed task as `✓ Justified`, `~ Contestable`, `⚡ Simplification`, `◐ Blind spot`, or `✗ Unjustified`.
+- Dispatch only `✓ Justified` tasks by default.
+- Do not dispatch `~`, `⚡`, `◐`, or `✗` tasks unless the user explicitly requests the trade-off.
+- In reflection mode, re-check in-progress and completed tasks against acceptance criteria and measurable user value before approving status transitions.
+- If three consecutive planning decisions were pure validations, run a contradiction pass and actively search for over-scope or hidden constraints.
+- Never dispatch work "because it can be built"; dispatch only what is required, testable, and aligned with agreed scope.
+
 ## Error Handling
 
 - If a sub-agent pair is stuck, provide additional context or re-scope the task.
@@ -143,7 +154,7 @@ What NOT to save:
 
 - Session-specific context (current task details, in-progress work, temporary state)
 - Information that might be incomplete — verify against project docs before writing
-- Anything that duplicates or contradicts existing CLAUDE.md instructions
+- Anything that duplicates or contradicts existing AGENT.md instructions
 - Speculative or unverified conclusions from reading a single file
 
 Explicit user requests:
