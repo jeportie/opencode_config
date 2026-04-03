@@ -35,6 +35,23 @@ main (versioned, production — semantic-release)
 - For multi-feature parallel work, use the orchestrator pipeline directly (no slash command needed).
 - For small single-file changes, work directly on `dev` — no agent mode needed.
 
+### Issue Fix Campaign Rule
+- For sprint fix campaigns, create/confirm all GitHub issues first so the user can review scope.
+- Treat each issue as isolated work:
+  - Create one dedicated branch from `dev` per issue (e.g., `fix/cf-033-biome-ignore-patterns`).
+  - Create one dedicated git worktree per issue branch.
+  - Run one sub-agent flow per issue (parallel across issues is preferred).
+- Each issue branch must only contain changes for that issue.
+- After validation, post a GitHub issue comment indicating the issue is addressed and link the branch/PR.
+- Merge issue branches into `dev` only after all planned issue fixes are completed and validated.
+- If the user reports a fix directly without first adding it to `CURRFIX.md`, apply this workflow:
+  1. Create the GitHub issue.
+  2. Add `CF-XXX` directly in `CURRFIX.md` on `dev`.
+  3. Implement the fix in a dedicated branch/PR.
+  4. Merge after checks pass.
+  5. Mark `CF-XXX` as done directly on `dev`.
+  6. Close the issue.
+
 ## Socratic Decision Rule (Rodin)
 
 This rule is mandatory for decisional work in every conversation.
