@@ -159,8 +159,8 @@ Use `dbg` when investigating runtime bugs, stepping through code, inspecting var
 - Use `resolve-library-id` to find the Context7 library ID, then `query-docs` to fetch relevant documentation.
 - This ensures code examples and API usage are current and version-accurate, avoiding hallucinated or outdated APIs.
 
-## Learning from Mistakes (INTEL.md)
-
-- At the start of every conversation, read `~/.config/opencode/INTEL.md` and apply all lessons listed there.
-- Whenever the user corrects you or points out a mistake, immediately add a concise entry to `~/.config/opencode/INTEL.md` describing what went wrong and how to avoid it in the future.
-- Never repeat a mistake that is documented in INTEL.md.
+<!-- ## Learning from Mistakes (INTEL.md) -->
+<!---->
+<!-- - At the start of every conversation, read `~/.config/opencode/INTEL.md` and apply all lessons listed there. -->
+<!-- - Whenever the user corrects you or points out a mistake, immediately add a concise entry to `~/.config/opencode/INTEL.md` describing what went wrong and how to avoid it in the future. -->
+<!-- - Never repeat a mistake that is documented in INTEL.md. -->
